@@ -1,0 +1,68 @@
+## entries table definition
+---
+name: images
+primarykey: id
+engine: InnoDB
+charset: utf8
+autoincrement:
+    colname: id
+    start: 1
+cols:
+    id:
+        type: bigint
+        length: 20
+        params: NOT NULL
+    starttime:
+        type: bigint
+        length: 20
+        params: NOT NULL
+    stoptime:
+        type: bigint
+        length: 20
+        params: NOT NULL
+    visible:
+        type: bool
+        length: 
+        params: NOT NULL
+    position:
+        type: int
+        length: 1
+        params: NOT NULL
+    imagepath:
+        type: varchar
+        length: 512
+        params: NOT NULL
+    cropping:
+        type: int
+        length: 1
+        params: NOT NULL
+    headline:
+        type: varchar
+        length: 255
+        params: NOT NULL
+    description:
+        type: varchar
+        length: 255
+        params: NOT NULL
+    slider_id:
+        type: int
+        length: 20
+        params: NOT NULL
+indices:
+    sldr_visible:
+        col:
+            visible
+        isUnqiue: false
+    sldr_position:
+        col:
+            position
+        isUnqiue: false
+    sldr_slider_id:
+        col:
+            slider_id
+        isUnqiue: false
+    sldr_sidpos:
+        col:
+            slider_id
+            position
+        isUnqiue: true

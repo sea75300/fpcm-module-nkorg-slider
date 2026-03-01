@@ -1,0 +1,30 @@
+## Module configure config
+---
+img_width_lg:
+    type: textInput
+    conf:
+        text: GUI_CONFIG_IMG_WIDTH_LG
+        icon: left-right
+        size: lg
+        type: number
+img_height_lg:
+    type: textInput
+    conf:
+        text: GUI_CONFIG_IMG_HEIGHT_LG
+        icon: up-down
+        size: lg
+        type: number
+img_width_sm:
+    type: textInput
+    conf:
+        text: GUI_CONFIG_IMG_WIDTH_SM
+        icon: left-right
+        size: 
+        type: number
+img_height_sm:
+    type: textInput
+    conf:
+        text: GUI_CONFIG_IMG_HEIGHT_SM
+        icon: up-down
+        size: 
+        type: number

@@ -1,0 +1,7 @@
+## Module controller map
+---
+slider/add: add
+slider/edit: edit
+slider/list: overview
+ajax/slider/actions: actions
+ajax/slider/autocomplete: autocomplete

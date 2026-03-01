@@ -1,16 +1,19 @@
 ## Module config file
 ---
-key: nkorg/calendar
+key: nkorg/slider
 author: imagine
-name: Calendar
-description: "Calendar module"
+name: Image Slider
+description: >
+  This module provides ean easy to use image slider.
 link: https://nobody-knows.org/
-version: 1.0.11
+version: 1.1.0-b1
 help: 
+useDataFolder: true
 requirements:
-    system: 5.2.0-a1
+    system: 5.3.0-b3
     php: 8.0.0
-tables:
 configOptions:
-    frontend_days: 30
-    dashboard_items: 10
+  img_width_lg: 1366
+  img_height_lg: 225
+  img_width_sm: 768
+  img_height_sm: 225
